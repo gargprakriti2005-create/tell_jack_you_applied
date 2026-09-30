@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tell Jack You Applied</title>
+  <meta name="description" content="Automatically keep Jack & Jill up to date with the jobs you've applied to.">
+  <style>
+    :root {
+      --bg: #f7f7f4;
+      --card: #ffffff;
+      --text: #171717;
+      --muted: #666;
+      --line: #e7e5df;
+      --accent: #111;
+      --accent-hover: #2b2b2b;
+      --soft: #f0eee8;
+      --green: #16834b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 22px 0; font-weight: 700;
+    }
+    .brand { display: flex; gap: 10px; align-items: center; }
+    .logo {
+      width: 34px; height: 34px; border-radius: 10px; background: #111; color: white;
+      display: grid; place-items: center; font-size: 17px;
+    }
+    .pill {
+      font-size: 12px; font-weight: 700; color: #555; background: var(--soft);
+      padding: 6px 10px; border-radius: 999px;
+    }
+    .hero { text-align: center; padding: 78px 0 64px; }
+    .eyebrow {
+      display: inline-block; background: #e9f6ef; color: var(--green);
+      padding: 7px 12px; border-radius: 999px; font-size: 13px; font-weight: 800;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(42px, 7vw, 72px); line-height: .98; letter-spacing: -3px;
+      margin: 0 auto 22px; max-width: 820px;
+    }
+    .hero p {
+      color: var(--muted); font-size: 20px; max-width: 650px; margin: 0 auto 30px;
+    }
+    .cta {
+      display: inline-flex; align-items: center; gap: 10px; text-decoration: none;
+      background: var(--accent); color: #fff; padding: 15px 22px; border-radius: 12px;
+      font-weight: 800; box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    }
+    .cta:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .sub { margin-top: 12px; color: #888; font-size: 13px; }
+    section { padding: 54px 0; }
+    .section-title { font-size: 30px; letter-spacing: -1px; margin: 0 0 10px; }
+    .section-lead { color: var(--muted); margin: 0 0 28px; }
+    .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+      padding: 24px; box-shadow: 0 4px 18px rgba(0,0,0,.035);
+    }
+    .num {
+      width: 34px; height: 34px; border-radius: 50%; background: var(--soft);
+      display: grid; place-items: center; font-weight: 900; margin-bottom: 18px;
+    }
+    .card h3 { margin: 0 0 7px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    .install { background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 30px; }
+    ol { margin: 0; padding-left: 24px; }
+    li { margin: 12px 0; padding-left: 5px; }
+    code {
+      background: #f1f0eb; border-radius: 6px; padding: 2px 6px; font-size: .92em;
+    }
+    .note {
+      margin-top: 22px; background: #faf8f2; border: 1px solid #ece6d8;
+      border-radius: 12px; padding: 14px 16px; color: #5e5749; font-size: 14px;
+    }
+    .faq { display: grid; gap: 12px; }
+    details {
+      background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px;
+    }
+    summary { cursor: pointer; font-weight: 800; }
+    details p { color: var(--muted); margin: 12px 0 0; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 44px; color: #888; font-size: 13px; }
+    @media (max-width: 700px) {
+      .steps { grid-template-columns: 1fr; }
+      .hero { padding-top: 55px; }
+      h1 { letter-spacing: -2px; }
+      .install { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand"><div class="logo">J</div><span>Tell Jack You Applied</span></div>
+      <span class="pill">Early access · v0.7.0</span>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">Built for frequent Jack & Jill users</div>
+        <h1>Apply to jobs.<br>Don't forget Jack.</h1>
+        <p>
+          Tell Jack You Applied detects when you've submitted a job application,
+          saves it when you say yes, and reminds you to update Jack & Jill later.
+        </p>
+        <a class="cta" href="tell-jack-you-applied-v0.7.0.zip" download>
+          ↓ &nbsp;Download the extension
+        </a>
+        <div class="sub">Chrome / Edge · Early access</div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Two clicks. Jack is up to date.</h2>
+        <p class="section-lead">No spreadsheet. No remembering every application. No Jack password.</p>
+        <div class="steps">
+          <div class="card">
+            <div class="num">1</div>
+            <h3>Apply normally</h3>
+            <p>Submit a job application on the site you already use.</p>
+          </div>
+          <div class="card">
+            <div class="num">2</div>
+            <h3>Say “Tell Jack?”</h3>
+            <p>The extension notices the confirmation page and asks if you want to save it.</p>
+          </div>
+          <div class="card">
+            <div class="num">3</div>
+            <h3>Update Jack</h3>
+            <p>Open Jack & Jill later, click “Yes, update Jack?”, and the saved applications are sent into the chat.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Install it</h2>
+        <p class="section-lead">This early-access version is installed manually while the Chrome Web Store review is underway.</p>
+        <div class="install">
+          <ol>
+            <li>Click <strong>Download the extension</strong> above.</li>
+            <li>Unzip the downloaded <code>tell-jack-you-applied-v0.7.0.zip</code> file.</li>
+            <li>Open <code>chrome://extensions</code> in Chrome (or the equivalent extensions page in Edge).</li>
+            <li>Turn on <strong>Developer mode</strong>.</li>
+            <li>Click <strong>Load unpacked</strong> and select the unzipped extension folder.</li>
+            <li>You're ready. The extension will watch for likely application confirmation pages.</li>
+          </ol>
+          <div class="note">
+            <strong>Privacy:</strong> detection happens locally in your browser. The extension does not send job-page content to an external server.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">What happens after installation?</h2>
+        <div class="faq">
+          <details open>
+            <summary>After I submit an application</summary>
+            <p>On a likely confirmation page, you'll see “✨ Tell Jack?” Choose “Yes, tell Jack” to save the application locally.</p>
+          </details>
+          <details>
+            <summary>When I open Jack & Jill</summary>
+            <p>If you have saved applications waiting, the extension asks “✨ Update Jack about what you've been up to?” Choose “Yes, update Jack”.</p>
+          </details>
+          <details>
+            <summary>Does it need my Jack password?</summary>
+            <p>No. The extension works with the Jack & Jill page you are already logged into and uses the visible chat interface.</p>
+          </details>
+          <details>
+            <summary>What if I don't want to tell Jack yet?</summary>
+            <p>Choose “Not now”. Your saved applications stay queued locally until you decide to update Jack.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <strong>Tell Jack You Applied</strong> · Early access v0.7.0<br>
+      Built to make job-search admin a little easier.
+    </footer>
+  </div>
+</body>
+</html>
